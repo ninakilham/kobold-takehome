@@ -4,6 +4,7 @@ The objective of this exercise is to infer and plot a continuous spatial distrib
 concentrations for an entire area from a set of soil samples taken in the field.
 
 **Background**
+
 Geochemical soil surveys are commonly used in mineral exploration. Workers walk or drive
 around a (potentially large) area and collect soil samples at specified locations. These samples
 are analyzed to determine the concentration of certain trace metals. The metal content in soils
@@ -15,6 +16,7 @@ with coordinates and a measured concentration of copper (Cu) and/or cobalt (Co) 
 The locations are pseudo locations (i.e. not in reference to a geographic coordinate system). 
 
 **Method**
+
 In order to infer and plot a continuous spatial distribution from the sparse, uneven sample locations, we will use two different
 interpolation strategies. Ideally, we could quantify how the variability of the metal concentrations changes with 
 distance and direction. We can do so using a model, or variogram, that captures the variation in the concentration
@@ -31,6 +33,7 @@ used to estimate the concentrations of Cobalt, since none of the variogram model
 sample concentration with distance and direction. 
 
 **Results**
+
 Continuous maps of Copper and Cobalt created using Krigging and Nearest Neighboor interpolation respectively aare stored within the
 data folder, and the notebook within the notebook folder. The Copper map also includes an estimate of the kriggin error across the field.
 We are not able to provide a similar measure of error using the nearest neighboor interpolation--however, by splitting the Cobalt dataset
